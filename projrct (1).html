@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AyurFlex - Arthritis Care</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>AyurFlex</h1>
+<p>Smart Ayurveda Care for Arthritis</p>
+</header>
+
+<div class="container">
+
+<!-- Pain Tracker -->
+<section class="card">
+<h2>Pain Tracker</h2>
+
+<label>Pain Level (1-10)</label>
+<input type="range" min="1" max="10" id="painLevel">
+
+<button onclick="savePain()">Save</button>
+
+<p id="painResult"></p>
+</section>
+
+<!-- Diet Plan -->
+<section class="card">
+<h2>Ayurvedic Diet Suggestions</h2>
+
+<ul>
+<li>Turmeric Milk</li>
+<li>Ginger Tea</li>
+<li>Warm Water</li>
+<li>Sesame Oil Massage</li>
+<li>Green Vegetables</li>
+</ul>
+
+</section>
+
+<!-- Medicine Reminder -->
+<section class="card">
+<h2>Medicine Reminder</h2>
+
+<input type="time" id="medTime">
+<button onclick="setReminder()">Set Reminder</button>
+
+<p id="reminderStatus"></p>
+
+</section>
+
+<!-- AI Assistant -->
+<section class="card">
+<h2>AyurFlex AI Assistant</h2>
+
+<div id="chatbox"></div>
+
+<input type="text" id="userInput" placeholder="Ask about arthritis...">
+<button onclick="sendMessage()">Send</button>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
